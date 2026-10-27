@@ -11,7 +11,10 @@
 
 def task_1_1():
     # TODO: реализовать
-    pass
+    name = input("Имя: ")
+    age = int(input("Возраст: "))
+    city = input("Город: ")
+    print(f"{name}, {age} лет, {city}.")
 
 
 # ============================================================
@@ -22,7 +25,11 @@ def task_1_1():
 
 def task_1_2():
     # TODO: реализовать
-    pass
+    a = int(input("Первое целое число: "))
+    b = int(input("Второе целое число: "))
+    print(a + b)
+    print(a - b)
+    print(a * b)
 
 
 # ============================================================
@@ -32,7 +39,9 @@ def task_1_2():
 
 def task_1_3():
     # TODO: реализовать
-    pass
+    text = input("Введите строку: ")
+    print(len(text))
+    print(text[:1])
 
 
 # ============================================================
@@ -44,7 +53,8 @@ def task_1_3():
 
 def task_1_4():
     # TODO: реализовать
-    pass
+    number = float(input("Введите число: "))
+    print(number > 0)
 
 
 # ============================================================
@@ -62,7 +72,11 @@ def task_1_4():
 
 def task_2_1(radius: float) -> tuple:
     # TODO: реализовать
-    pass
+    import math
+
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return area, circumference
 
 
 # ============================================================
@@ -77,7 +91,8 @@ def task_2_1(radius: float) -> tuple:
 
 def task_2_2(a, b):
     # TODO: реализовать
-    pass
+    a, b = b, a
+    return a, b
 
 
 # ============================================================
@@ -96,7 +111,9 @@ def task_2_2(a, b):
 
 def task_2_3(minutes: int) -> str:
     # TODO: реализовать
-    pass
+    h = minutes // 60
+    m = minutes % 60
+    return f"{h:02d}:{m:02d}"
 
 
 # ============================================================
@@ -108,3 +125,19 @@ def task_2_3(minutes: int) -> str:
 if __name__ == "__main__":
     print("p4_base: заполните TODO в функциях.")
     print("Задачи: 1.1–1.4, 2.1–2.3")
+    task_1_1()
+    task_1_2()
+    task_1_3()
+    task_1_4()
+
+    radius = float(input("Введите радиус: "))
+    area, circumference = task_2_1(radius)
+    print(f"S = {area:.2f}, C = {circumference:.2f}")
+
+    a = float(input("Введите a: "))
+    b = float(input("Введите b: "))
+    a, b = task_2_2(a, b)
+    print(f"a = {a:g}, b = {b:g}")
+
+    minutes = int(input("Введите количество минут: "))
+    print(task_2_3(minutes))
