@@ -140,4 +140,4 @@ if __name__ == "__main__":
     print(f"a = {a:g}, b = {b:g}")
 
     minutes = int(input("Введите количество минут: "))
-    print(task_2_3(minutes)) 
+    print(task_2_3(minutes))
