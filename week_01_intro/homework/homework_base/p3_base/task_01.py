@@ -25,4 +25,4 @@ def has_duplicates_slow(nums: list) -> bool:
 if __name__ == "__main__":
     data = [1, 2, 3, 2]
     print(has_duplicates_slow(data))   # True
-    print(has_duplicates_slow([1, 2, 3]))  # Falsetask_01.py
+    print(has_duplicates_slow([1, 2, 3]))  # Falsetask_01.p

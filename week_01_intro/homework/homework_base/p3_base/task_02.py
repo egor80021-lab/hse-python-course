@@ -52,4 +52,3 @@ def complexity_d() -> str:
 
 if __name__ == "__main__":
     print(complexity_a(), complexity_b(), complexity_c(), complexity_d())
-```
