@@ -12,7 +12,16 @@
 
 def main():
     # TODO: реализовать
-    pass
+    a = 7
+    b = 3
+
+    print(a + b)   # сумма
+    print(a - b)   # разность
+    print(a * b)   # произведение
+    print(a / b)   # обычное деление
+    print(a // b)  # целочисленное деление
+    print(a % b)   # остаток
+    print(a ** b)  # степень
 
 
 if __name__ == "__main__":

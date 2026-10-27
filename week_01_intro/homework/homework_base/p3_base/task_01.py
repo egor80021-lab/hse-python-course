@@ -17,7 +17,8 @@ def has_duplicates_slow(nums: list) -> bool:
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
             # TODO: если nums[i] == nums[j], верните True
-            pass
+            if nums[i] == nums[j]:
+                return True
     return False
 
 
