@@ -14,27 +14,31 @@
 
 def above_zero(temps):
     # TODO
-    pass
+    return [x for x in temps if x > 0]
 
 
 def total(temps):
     # TODO
-    pass
+    return sum(temps)
 
 
 def average(temps):
     # TODO
-    pass
+    return sum(temps) / len(temps)
 
 
 def below_minus_ten(temps):
     # TODO
-    pass
+    count = 0
+    for x in temps:
+        if x < -10:
+            count += 1
+    return count
 
 
 def rounded(temps):
     # TODO
-    pass
+    return [int(x) for x in temps]
 
 
 if __name__ == "__main__":
