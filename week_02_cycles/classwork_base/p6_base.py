@@ -154,7 +154,9 @@ def task_2_3():
 
 def task_2_4():
     # TODO: реализовать
-    pass
+    year = 2024
+    leap = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+    print(leap)
 
 
 # ------------------------------------------------------------
@@ -167,7 +169,10 @@ def task_2_4():
 
 def task_2_5():
     # TODO: реализовать
-    pass
+    # Исправление: and вместо or.
+    x = 5
+    if x > 0 and x < 10:
+        print("ok")
 
 
 # ------------------------------------------------------------
@@ -178,7 +183,8 @@ def task_2_5():
 
 def task_2_6():
     # TODO: реализовать
-    pass
+    password = input("Введите пароль: ")
+    print(len(password) > 8 and "!" in password)
 
 
 # ============================================================
@@ -198,7 +204,14 @@ def task_2_6():
 
 def task_3_1():
     # TODO: реализовать
-    pass
+    # Вывод: medium
+    x = 5
+    if x > 10:
+        print("big")
+    elif x > 3:
+        print("medium")
+    else:
+        print("small")
 
 
 # ------------------------------------------------------------
@@ -210,7 +223,8 @@ def task_3_1():
 
 def task_3_2():
     # TODO: реализовать
-    pass
+    n = 9
+    print("yes" if n % 3 == 0 else "no")
 
 
 # ------------------------------------------------------------
@@ -223,7 +237,12 @@ def task_3_2():
 
 def task_3_3():
     # TODO: реализовать
-    pass
+    # Исправление: добавлены отступы перед print.
+    x = 5
+    if x > 0:
+        print("positive")
+    else:
+        print("negative")
 
 
 # ------------------------------------------------------------
@@ -241,7 +260,16 @@ def task_3_3():
 
 def task_3_4():
     # TODO: реализовать
-    pass
+    # Вывод: 3
+    a, b = 5, 10
+    if a > b:
+        print("1")
+    elif a == b:
+        print("2")
+    elif a < b:
+        print("3")
+    else:
+        print("4")
 
 
 # ------------------------------------------------------------
@@ -258,7 +286,14 @@ def task_3_4():
 
 def task_3_5():
     # TODO: реализовать
-    pass
+    total = float(input("Сумма покупки: "))
+    if total > 5000:
+        discount = 0.20
+    elif total > 1000:
+        discount = 0.10
+    else:
+        discount = 0.0
+    print(discount)
 
 
 # ------------------------------------------------------------
@@ -268,7 +303,13 @@ def task_3_5():
 
 def task_3_6():
     # TODO: реализовать
-    pass
+    x = float(input("Введите число: "))
+    if x > 0:
+        print("positive")
+    elif x < 0:
+        print("negative")
+    else:
+        print("zero")
 
 
 # ============================================================
@@ -287,7 +328,13 @@ def task_3_6():
 
 def task_4_1():
     # TODO: реализовать
-    pass
+    # Вывод: b > a
+    a, b = 3, 7
+    if a > 0:
+        if b > a:
+            print("b > a")
+        else:
+            print("b <= a")
 
 
 # ------------------------------------------------------------
@@ -301,7 +348,11 @@ def task_4_1():
 
 def task_4_2():
     # TODO: реализовать
-    pass
+    age = 20
+    license = True
+    if age >= 18:
+        if license:
+            print("ok")
 
 
 # ------------------------------------------------------------
@@ -313,7 +364,11 @@ def task_4_2():
 
 def task_4_3():
     # TODO: реализовать
-    pass
+    # print должен быть внутри второго if: нужен ещё один отступ.
+    a, b = 3, 7
+    if a > 0:
+        if b > 0:
+            print("both positive")
 
 
 # ------------------------------------------------------------
@@ -330,7 +385,15 @@ def task_4_3():
 
 def task_4_4():
     # TODO: реализовать
-    pass
+    # Вывод: positive even
+    x = 12
+    if x > 0:
+        if x % 2 == 0:
+            print("positive even")
+        else:
+            print("positive odd")
+    else:
+        print("non-positive")
 
 
 # ------------------------------------------------------------
@@ -340,7 +403,13 @@ def task_4_4():
 
 def task_4_5():
     # TODO: реализовать
-    pass
+    x = 12
+    if x > 0 and x % 2 == 0:
+        print("positive even")
+    elif x > 0:
+        print("positive odd")
+    else:
+        print("non-positive")
 
 
 # ------------------------------------------------------------
@@ -351,7 +420,19 @@ def task_4_5():
 
 def task_4_6():
     # TODO: реализовать
-    pass
+    x = int(input("Введите целое число: "))
+    if x > 0:
+        if x % 2 == 0:
+            print("positive even")
+        else:
+            print("positive odd")
+    elif x < 0:
+        if x % 3 == 0:
+            print("negative divisible by 3")
+        else:
+            print("negative not divisible by 3")
+    else:
+        print("zero")
 
 
 # ============================================================
@@ -366,7 +447,9 @@ def task_4_6():
 
 def task_5_1():
     # TODO: реализовать
-    pass
+    # Вывод: olleH hello 5
+    s = "Hello"
+    print(s[::-1], s.lower(), len(s))
 
 
 # ------------------------------------------------------------
@@ -378,7 +461,9 @@ def task_5_1():
 
 def task_5_2():
     # TODO: реализовать
-    pass
+    s = "  hello  "
+    res = s.strip().upper()
+    print(res)
 
 
 # ------------------------------------------------------------
@@ -388,7 +473,11 @@ def task_5_2():
 
 def task_5_3():
     # TODO: реализовать
-    pass
+    s = input("Введите строку: ")
+    if s:
+        print(s[0], s[-1])
+    else:
+        print("Строка пустая")
 
 
 # ------------------------------------------------------------
@@ -400,7 +489,10 @@ def task_5_3():
 
 def task_5_4():
     # TODO: реализовать
-    pass
+    # Вывод: ['a', 'b', '', 'c'], затем 4 на новой строке.
+    s = "a,b,,c"
+    print(s.split(","))
+    print(len(s.split(",")))
 
 
 # ------------------------------------------------------------
@@ -412,7 +504,9 @@ def task_5_4():
 
 def task_5_5():
     # TODO: реализовать
-    pass
+    s = "Level"
+    ok = s.lower() == s.lower()[::-1]
+    print(ok)
 
 
 # ------------------------------------------------------------
@@ -422,7 +516,8 @@ def task_5_5():
 
 def task_5_6():
     # TODO: реализовать
-    pass
+    s = input("Введите строку: ")
+    print(s[1:-1])
 
 
 # ============================================================
@@ -436,7 +531,8 @@ def task_5_6():
 
 def task_6_1():
     # TODO: реализовать
-    pass
+    # Результат: ['1', '22', '333']
+    print(re.findall(r"\d+", "a1b22c333"))
 
 
 # ------------------------------------------------------------
@@ -448,7 +544,9 @@ def task_6_1():
 
 def task_6_2():
     # TODO: реализовать
-    pass
+    s = "2026-10-05"
+    ok = re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", s) is not None
+    print(ok)
 
 
 # ------------------------------------------------------------
@@ -458,7 +556,8 @@ def task_6_2():
 
 def task_6_3():
     # TODO: реализовать
-    pass
+    s = input("Введите строку: ")
+    print(re.fullmatch(r"[0-9]{4}", s) is not None)
 
 
 # ------------------------------------------------------------
@@ -472,7 +571,8 @@ def task_6_3():
 
 def task_6_4():
     # TODO: реализовать
-    pass
+    # Вариант 2.
+    print(r"[A-Za-z]+")
 
 
 # ------------------------------------------------------------
@@ -485,7 +585,9 @@ def task_6_4():
 
 def task_6_5():
     # TODO: реализовать
-    pass
+    s = "a1b22c333"
+    nums = [int(number) for number in re.findall(r"\d+", s)]
+    print(sum(nums))
 
 
 # ------------------------------------------------------------
@@ -496,7 +598,8 @@ def task_6_5():
 
 def task_6_6():
     # TODO: реализовать
-    pass
+    s = input("Введите номер телефона: ")
+    print(re.fullmatch(r"\+7[0-9]{10}", s) is not None)
 
 
 # ============================================================
@@ -519,3 +622,30 @@ if __name__ == "__main__":
     task_2_1()
     task_2_2()
     task_2_3()
+    task_2_4()
+    task_2_5()
+    task_2_6()
+    task_3_1()
+    task_3_2()
+    task_3_3()
+    task_3_4()
+    task_3_5()
+    task_3_6()
+    task_4_1()
+    task_4_2()
+    task_4_3()
+    task_4_4()
+    task_4_5()
+    task_4_6()
+    task_5_1()
+    task_5_2()
+    task_5_3()
+    task_5_4()
+    task_5_5()
+    task_5_6()
+    task_6_1()
+    task_6_2()
+    task_6_3()
+    task_6_4()
+    task_6_5()
+    task_6_6()
