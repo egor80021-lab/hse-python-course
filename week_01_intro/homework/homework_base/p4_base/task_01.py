@@ -11,7 +11,11 @@
 
 def main():
     # TODO: реализовать
-    pass
+    length = 12
+    width = 5
+
+    print(length * width)        # площадь
+    print(2 * (length + width))  # периметр
 
 
 if __name__ == "__main__":
