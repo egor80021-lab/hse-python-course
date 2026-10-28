@@ -13,27 +13,31 @@
 
 def flat(grades):
     # TODO
-    pass
+    result = []
+    for row in grades:
+        for grade in row:
+            result.append(grade)
+    return result
 
 
 def total(grades):
     # TODO
-    pass
+    return sum(flat(grades))
 
 
 def maximum(grades):
     # TODO
-    pass
+    return max(flat(grades))
 
 
 def count_fives(grades):
     # TODO
-    pass
+    return flat(grades).count(5)
 
 
 def averages(grades):
     # TODO
-    pass
+    return [sum(row) / len(row) for row in grades]
 
 
 if __name__ == "__main__":
