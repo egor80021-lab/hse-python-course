@@ -26,25 +26,34 @@
 def hw_2_1_grade(score: int) -> str:
     """Вернуть 'A', 'B', 'C' или 'F'."""
     # TODO: реализовать
-    pass
+    if score >= 90:
+        return "A"
+    elif score >= 75:
+        return "B"
+    elif score >= 60:
+        return "C"
+    else:
+        return "F"
 
 
 def hw_2_2_scholarship(score: int) -> bool:
     """Вернуть True, если оценка 'A'."""
     # TODO: реализовать
-    pass
+    return hw_2_1_grade(score) == "A"
 
 
 def hw_2_3_score_ok(score: int) -> bool:
     """Вернуть True, если 0 <= score <= 100."""
     # TODO: реализовать
-    pass
+    return 0 <= score <= 100
 
 
 def hw_2_4_grade_line(score: int) -> str:
     """Вернуть строку вида 'A:yes' или 'B:no'."""
     # TODO: реализовать
-    pass
+    grade = hw_2_1_grade(score)
+    scholarship = "yes" if hw_2_2_scholarship(score) else "no"
+    return f"{grade}:{scholarship}"
 
 
 # ============================================================
