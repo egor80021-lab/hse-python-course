@@ -20,31 +20,46 @@
 def hw_4_1_pos_even(x: int) -> bool:
     """Вернуть True, если x > 0 и x % 2 == 0."""
     # TODO: реализовать
-    pass
+    return x > 0 and x % 2 == 0
 
 
 def hw_4_2_neg_div3(x: int) -> bool:
     """Вернуть True, если x < 0 и x % 3 == 0."""
     # TODO: реализовать
-    pass
+    return x < 0 and x % 3 == 0
 
 
 def hw_4_3_is_zero(x: int) -> bool:
     """Вернуть True, если x == 0."""
     # TODO: реализовать
-    pass
+    return x == 0
 
 
 def hw_4_4_describe(x: int) -> str:
     """Вернуть описание значения."""
     # TODO: реализовать
-    pass
+    if x > 0:
+        if x % 2 == 0:
+            return "positive even"
+        else:
+            return "positive odd"
+    elif x < 0:
+        if x % 3 == 0:
+            return "negative div3"
+        else:
+            return "negative not div3"
+    else:
+        return "zero"
+
 
 
 def hw_4_5_all_positive(values: list[int]) -> bool:
     """Вернуть True, если все значения > 0."""
     # TODO: реализовать
-    pass
+    for value in values:
+        if value <= 0:
+            return False
+    return True
 
 
 # ============================================================
