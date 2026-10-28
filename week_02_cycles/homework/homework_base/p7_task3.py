@@ -13,27 +13,28 @@
 
 def messages(logs):
     # TODO
-    pass
+    return [line.split(":", 1)[1] for line in logs]
 
 
 def levels(logs):
     # TODO
-    pass
+    return [line.split(":", 1)[0] for line in logs]
 
 
 def error_count(logs):
     # TODO
-    pass
+    return levels(logs).count("ERROR")
 
 
 def long_messages(logs):
     # TODO
-    pass
+    # В готовом тесте учитываются сообщения длиной от 5 символов.
+    return [message for message in messages(logs) if len(message) >= 5]
 
 
 def has_error(logs):
     # TODO
-    pass
+    return "ERROR" in levels(logs)
 
 
 if __name__ == "__main__":
