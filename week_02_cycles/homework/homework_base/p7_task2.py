@@ -14,27 +14,28 @@
 
 def snapshots(n):
     # TODO
-    pass
+    return list(range(n + 1))
 
 
 def multiples_of_three(n):
     # TODO
-    pass
+    return list(range(0, n + 1, 3))
 
 
 def reversed_snapshots(n):
     # TODO
-    pass
+    return list(range(n, -1, -1))
 
 
 def squares(n):
     # TODO
-    pass
+    return [x ** 2 for x in range(n + 1)]
+
 
 
 def sum_multiples_of_five(n):
     # TODO
-    pass
+    return sum(range(0, n + 1, 5))
 
 
 if __name__ == "__main__":
